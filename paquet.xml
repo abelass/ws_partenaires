@@ -1,0 +1,46 @@
+<paquet
+	prefix="ws_partenaires"
+	categorie="squelette"
+	version="1.0.1"
+	etat="dev"
+	compatibilite="[3.0.16;3.0.*]"
+	logo=""
+	documentation=""
+>
+	<!--
+		Paquet genere le 2014-03-25 16:01:35
+		(Vous pouvez bien entendu supprimer ces commentaires) 
+	-->
+
+	<nom>Web Simple Partenaires</nom>
+
+	<!-- cette balise peut etre presente plusieurs fois s'il y a plusieurs auteurs --> 
+	<auteur lien='http://websimple.be'>Rainer Müller</auteur>
+
+	<licence>GNU/GPL</licence>
+  
+	<necessite nom="partenaires" compatibilite="[1.5.1;]" />
+  
+	<!--
+		Exemple de commandes
+		* dependances
+
+		<utilise nom="saisies" compatibilite="[1.21.0;]" />
+		<lib nom="simplehtmldom" lien="http://chemin_vers_archive.zip" />
+		* pipelines
+		<pipeline nom="autoriser" inclure="ws_partenaires_autorisations.php" />
+		<pipeline nom="insert_head" inclure="ws_partenaires_pipelines.php" />
+		* declarer un pipeline 
+		<pipeline nom="mon_pipeline" action="" />
+		* parents de menus de SPIP :
+				menu_accueil (A eviter), menu_edition, menu_publication,
+				menu_activite, menu_squelette, menu_administration, menu_configuration 
+		<menu nom="ws_partenaires" titre="ws_partenaires:ws_partenaires_titre" parent="menu_edition"  icone="images/ws_partenaires-16.png" />
+		* parents d'onglets... configuration, plugins, statistiques, ... 
+		<onglet nom="ws_partenaires" titre="ws_partenaires:ws_partenaires_titre" parent="configuration" icone="images/ws_partenaires-24.png" />
+	-->
+
+
+
+
+</paquet>
