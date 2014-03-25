@@ -1,0 +1,2 @@
+ws_partenaires
+==============
