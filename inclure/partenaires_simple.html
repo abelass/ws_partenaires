@@ -1,0 +1,14 @@
+<B_partenaires>
+<section class="liste partenaire simple">
+	#ANCRE_PAGINATION
+
+	<ul class="liste-items">
+		<BOUCLE_partenaires(PARTENAIRES) {id_rubrique ?} {par num nom}{pagination #ENV{pagination,20}}>	
+		  <li class="item"><a href="#URL_SITE">[(#LOGO_PARTENAIRE
+		      |image_passe_partout{#ENV{width,100},#ENV{height,100}}
+		      |image_recadre{#ENV{width,100},#ENV{height,100}})]</a> <a href="#URL_SITE">#NOM</a></li>
+		</BOUCLE_partenaires>
+	</ul>
+	[<p class="pagination">(#PAGINATION)</p>]
+</section>
+</B_partenaires>
