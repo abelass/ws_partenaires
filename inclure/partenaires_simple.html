@@ -6,7 +6,7 @@
 		<BOUCLE_partenaires(PARTENAIRES) {id_rubrique ?} {par num nom}{pagination #ENV{pagination,20}}>	
 		  <li class="item"><a href="[(#URL_SITE**|extraire_multi)]">[(#LOGO_PARTENAIRE
 		      |image_passe_partout{#ENV{width,100},#ENV{height,100}}
-		      |image_recadre{#ENV{width,100},#ENV{height,100}})]</a> <a href="#URL_SITE">#NOM</a></li>
+		      |image_recadre{#ENV{width,100},#ENV{height,100}})]</a> <a href="[(#URL_SITE**|extraire_multi)]">#NOM</a></li>
 		</BOUCLE_partenaires>
 	</ul>
 	[<p class="pagination">(#PAGINATION)</p>]
